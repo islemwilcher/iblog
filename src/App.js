@@ -1,9 +1,19 @@
-import React from 'react'
+
+import { BrowserRouter as Router } from 'react-router-dom';
+import { AppBar } from '@material-ui/core'
+//Components
+import Navbar from './components/nav/navbar'
+
+import './index.css'
 
 const App = () => {
     return (
-        <div>
-            <h2>About</h2>
+        <div className='container'>
+            <Router>
+                <AppBar color='inherit' >
+                    <Navbar />
+                </AppBar>
+            </Router>
         </div>
     )
 }
