@@ -11,16 +11,21 @@ const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     height:12vh;
+    box-shadow: 2px 2px 6px grey;
 
     .logo {
         width: 60px;
         display: flex;
-        border-radius: 10px;
         align-items: center;
-        z-index:15;
+
+        img{
+            border-radius: 50%;
+        }
         
         h3{
             margin-left: 20px;
+            font-weight: 400;
+            font-size: 35px;
         }
     }
 `

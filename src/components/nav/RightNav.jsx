@@ -1,6 +1,12 @@
 
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react'
+import { Button } from '@material-ui/core'
+import styled from 'styled-components'
+import { Link, useHistory, useLocation } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import decode from 'jwt-decode'
+
+import * as actionType from '../../constants/actiontype'
 
 const Ul = styled.ul`
     list-style: none;
@@ -20,7 +26,7 @@ const Ul = styled.ul`
 
     @media (max-width: 768px) {
         flex-flow: column nowrap;
-        z-index: 19;
+        z-index: 20;
         position: fixed;
         transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
         top:0;
@@ -29,6 +35,7 @@ const Ul = styled.ul`
         width:100%;
         padding-top: 2.5rem;
         color:black;
+        background-color: white;
         justify-content: space-evenly;     
         transition: 0.4s ease-in-out;
 
@@ -40,7 +47,35 @@ const Ul = styled.ul`
     }
 `;
     
-const rightNav = ({ open }) => {
+const RightNav = ({ open }) => {
+
+    
+
+    const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
+    const dispatch = useDispatch();
+    const location = useLocation();
+    const history = useHistory();
+
+    const logout = () => {
+        dispatch({ type: actionType.LOGOUT });
+    
+        history.push('/');
+    
+        setUser(null);
+      };
+
+    useEffect(() => {
+    const token = user?.token;
+
+    if (token) {
+        const decodedToken = decode(token);
+
+        if (decodedToken.exp * 1000 < new Date().getTime()) logout();
+    }
+
+    setUser(JSON.parse(localStorage.getItem('profile')));
+    }, [location]);
+
     const navStyle = {
         color: 'black',
         textDecoration: 'none'
@@ -52,8 +87,18 @@ const rightNav = ({ open }) => {
             <Link style={navStyle} to="/allposts"><li>All Posts</li></Link>
             <Link style={navStyle} to="/about"><li>About</li></Link>
             <Link style={navStyle} to="/contact"><li>contact</li></Link>
+            {user
+                ? <Link style={navStyle} to="/dashboard"><li>Dashboard</li></Link>
+                : null
+            }
+            
+            <Link style={navStyle} to="/signin"><li>
+                {user
+                    ? <Button variant="contained" size='small' color="secondary" onClick={logout}>Log out</Button> 
+                    : <Button variant="contained" size='small' color="primary">Sign in</Button>
+                }</li></Link>
         </Ul>
     )
 }
 
-export default rightNav
+export default RightNav
