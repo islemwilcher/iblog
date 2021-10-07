@@ -48,12 +48,10 @@ const rightNav = ({ open }) => {
     
     return (
         <Ul open = {open}>
-            <Link style={navStyle} to="/portfolio" >
-                <li>Home</li>
-            </Link>
+            <Link style={navStyle} to="/" ><li>Home</li></Link>
+            <Link style={navStyle} to="/allposts"><li>All Posts</li></Link>
             <Link style={navStyle} to="/about"><li>About</li></Link>
-            <Link style={navStyle} to="/projects"><li>All Posts</li></Link>
-            <Link style={navStyle} to="/contacts"><li>Sign In</li></Link>
+            <Link style={navStyle} to="/contact"><li>contact</li></Link>
         </Ul>
     )
 }
