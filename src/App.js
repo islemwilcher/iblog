@@ -6,16 +6,17 @@ import Navbar from './components/nav/navbar'
 
 import './index.css'
 
+//pages
 import AllPosts from './pages/all posts/AllPosts'
 import Home from './pages/home/Home'
 import About from './pages/about/About'
-import Contact from './pages/contact/Contact';
+import Contact from './pages/contact/Contact'
 
 const App = () => {
     return (
         <div className='container'>
             <Router>
-                <AppBar color='inherit' >
+                <AppBar position='static' color='inherit' >
                     <Navbar />
                 </AppBar>
                 <Switch>
