@@ -59,10 +59,10 @@ const RightNav = ({ open }) => {
     const logout = () => {
         dispatch({ type: actionType.LOGOUT });
     
-        history.push('/');
+        history.push('/signin');
     
         setUser(null);
-      };
+    };
 
     useEffect(() => {
     const token = user?.token;
