@@ -9,6 +9,7 @@ import useStyles from './styles'
 
 const ManagePosts = () => {
     const [currentId, setCurrentId] = useState(0);
+    const [visible, setVisibale] = useState(true)
     const dispatch = useDispatch();
     const classes = useStyles()
 
@@ -21,7 +22,7 @@ const ManagePosts = () => {
             <Container className={classes.grow}>
                 <Grid className={classes.grid} container justify="space-between" alignItems="stretch" spacing={3}>
                     <Grid item xs={12} sm={8}>
-                        <Posts setCurrentId={setCurrentId} />
+                        <Posts setCurrentId={setCurrentId} visible={visible} />
                     </Grid>
                     <Grid item xs={12} sm={4}>
                         <Form currentId={currentId} setCurrentId={setCurrentId} />
