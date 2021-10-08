@@ -14,6 +14,7 @@ import Home from './pages/home/Home'
 import About from './pages/about/About'
 import Contact from './pages/contact/Contact'
 import signin from './pages/signin/signin'
+import ManagePosts from './pages/admin/manageposts/ManagePosts';
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
                     <Navbar />
                 <Switch>
                     <Protectedroute exact path='/dashboard' component={Dashboard} />
+                    <Protectedroute exact path='/manageposts' component={ManagePosts} />
                     <Route path='/' exact component={Home} />
                     <Route path="/allposts" component={AllPosts} />
                     <Route path='/about' component={About} />

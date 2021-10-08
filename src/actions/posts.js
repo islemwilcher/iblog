@@ -1,4 +1,4 @@
-import { START_LOADING, END_LOADING, FETCH_ALL, FETCH_POST, CREATE, UPDATE, DELETE } from '../constants/actionTypes';
+import { START_LOADING, FETCH_ALL, FETCH_POST, CREATE, UPDATE, DELETE } from '../constants/actiontype';
 import * as api from '../api/index.js';
 
 
@@ -14,26 +14,21 @@ export const getPost = (id) => async (dispatch) => {
   }
 };
 
-export const getPosts = (page) => async (dispatch) => {
+export const getPosts = () => async (dispatch) => {
   try {
-    dispatch({ type: START_LOADING });
-    const { data: { data, currentPage, numberOfPages } } = await api.fetchPosts(page);
+    const { data } = await api.fetchPosts();
 
-    dispatch({ type: FETCH_ALL, payload: { data, currentPage, numberOfPages } });
-    dispatch({ type: END_LOADING });
+    dispatch({ type: FETCH_ALL, payload: data });
   } catch (error) {
     console.log(error);
   }
 };
 
-export const createPost = (post, history) => async (dispatch) => {
+export const createPost = (post) => async (dispatch) => {
   try {
-    dispatch({ type: START_LOADING });
     const { data } = await api.createPost(post);
 
     dispatch({ type: CREATE, payload: data });
-
-    history.push(`/posts/${data._id}`);
   } catch (error) {
     console.log(error);
   }
