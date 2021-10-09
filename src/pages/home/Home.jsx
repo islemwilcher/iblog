@@ -1,6 +1,8 @@
 
 import { Container, Grid, Paper, Typography } from '@material-ui/core'
 
+import SocialMedia from '../../components/socialmedia/SocialMedia'
+
 import MainPhoto from '../../assets/mainphoto.jpg'
 import Freelence from '../../assets/freelence.jpg'
 import Why from '../../assets/why.jpg'
@@ -33,6 +35,7 @@ const Home = () => {
                     <img className={classes.freelencephoto} src={Why} alt="Why iBlog" />
                 </Grid>
             </Container>
+            <SocialMedia />
         </>
     )
 }
