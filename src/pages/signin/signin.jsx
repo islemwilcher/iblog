@@ -24,8 +24,8 @@ const Signin = () => {
 
     return (
         <Container component="main" maxWidth="xs">
-            <Paper className={classes.paper} elevation={3}>
-                <Typography component="h1" variant="h5">Sign in</Typography>
+            <Paper className={classes.paper} raised elevation={3}>
+                <Typography component="h1" variant="h4">Sign in</Typography>
                 <form className={classes.form} onSubmit={handleSubmit}>
                 <Grid container spacing={2}>
                     <TextField className={classes.text} variant='outlined' name="email" label="Email Address" onChange={handleChange} type="email" fullWidth />
@@ -34,7 +34,7 @@ const Signin = () => {
                 <Button type="submit" fullWidth variant="contained" color="primary" className={classes.submit} >
                     Sign In
                 </Button>
-                <Typography variant="body2">This is private blog only the admin allowed to sign in yet!</Typography>
+                <Typography variant="body2">This is private a blog only the admin allowed to sign in yet!</Typography>
                 </form>
             </Paper>
         </Container>

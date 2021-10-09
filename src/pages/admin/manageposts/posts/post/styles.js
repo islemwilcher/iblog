@@ -25,6 +25,7 @@ export default makeStyles({
     display: 'block',
     margin: 'auto 0',
     paddingLeft: '15px',
+    paddingBottom: '5px',
   },
   creator: {
     color: 'gray',

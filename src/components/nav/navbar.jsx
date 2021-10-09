@@ -5,6 +5,7 @@ import Burger from './Burger'
 import { Link } from 'react-router-dom';
 
 const Nav = styled.nav`
+    background-color: white;
     width: 100%;
     padding: 10px 40px;
     align-items: center;

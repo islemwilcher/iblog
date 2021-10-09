@@ -21,7 +21,7 @@ const Post = ({ post, setCurrentId, visible }) => {
   }
 
   return (
-    <Card className={classes.card}>
+    <Card className={classes.card} raised elevation={3} >
       <div className={classes.base} onClick={openPost}>
         <CardMedia className={classes.media} image={post.selectedFile} title={post.title} />
 

@@ -1,4 +1,4 @@
-import { START_LOADING, FETCH_ALL, FETCH_POST, CREATE, UPDATE, DELETE } from '../constants/actiontype';
+import { START_LOADING, FETCH_ALL, FETCH_POST, CREATE, UPDATE, DELETE, END_LOADING } from '../constants/actiontype';
 import * as api from '../api/index.js';
 
 
