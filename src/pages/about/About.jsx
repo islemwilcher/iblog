@@ -1,5 +1,4 @@
-import { BsInstagram, BsGithub } from 'react-icons/bs'
-import { AiOutlineLinkedin, AiOutlineTwitter } from 'react-icons/ai'
+
 import { Container, Typography } from "@material-ui/core"
 import useStyles from './styles'
 import SocialMedia from '../../components/socialmedia/SocialMedia'

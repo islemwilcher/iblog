@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
 //Components
 import Navbar from './components/nav/navbar'
@@ -24,6 +24,7 @@ const App = () => {
                 <Switch>
                     <Protectedroute exact path='/dashboard' component={Dashboard} />
                     <Protectedroute exact path='/manageposts' component={ManagePosts} />
+                    <Route path="/iblog" exact component={() => <Redirect to="/" />} />
                     <Route path='/' exact component={Home} />
                     <Route path='/posts/:id' exact component={PostDetails} />
                     <Route path="/allposts" component={AllPosts} />

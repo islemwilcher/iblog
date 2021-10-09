@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Typography, CircularProgress, Container, CardMedia } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
 import moment from 'moment';
-import { useParams, useHistory } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { getPost } from '../../actions/posts';
 
 import Details from '../../components/detailscomponent/details';
@@ -12,7 +12,6 @@ import SocialMedia from '../../components/socialmedia/SocialMedia';
 const Postdetails = () => {
   const { post, posts, isLoading } = useSelector((state) => state.posts);
   const dispatch = useDispatch();
-  const history = useHistory();
   const { id } = useParams();
   const classes = useStyles()
   const reverse = true
