@@ -29,7 +29,7 @@ const Home = () => {
                     <div className={classes.whysection}>
                         <Typography className={classes.title1} variant='h4' gutterBottom>WHY I CREATE iBlog</Typography>
                         <Paper className={classes.paragraphpaper} raised elevation={6}>
-                            <Typography className={classes.paragraph} variant='body-1'>as a software engineer Student i love helping others, beginners are looking everywhere, and there is a lot of resources which is so disturbing.<br />So i like to share WHERE and HOW to start and TIPS to make it easy</Typography>
+                            <Typography className={classes.paragraph} variant='body-1'>as a software engineer Student i love helping others, beginners are looking everywhere, and there are a lot of resources which is so disturbing.<br />So i like to share WHERE and HOW to start and TIPS to make it easier</Typography>
                         </Paper>
                     </div>
                     <img className={classes.freelencephoto} src={Why} alt="Why i-Blog" />
