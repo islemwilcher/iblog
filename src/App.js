@@ -24,8 +24,8 @@ const App = () => {
                 <Switch>
                     <Protectedroute exact path='/dashboard' component={Dashboard} />
                     <Protectedroute exact path='/manageposts' component={ManagePosts} />
-                    <Route path="/iblog" exact component={() => <Redirect to="/" />} />
-                    <Route path='/' exact component={Home} />
+                    <Route path="/" exact component={() => <Redirect to="/iblog" />} />
+                    <Route path='/iblog' exact component={Home} />
                     <Route path='/posts/:id' exact component={PostDetails} />
                     <Route path="/allposts" component={AllPosts} />
                     <Route path='/about' component={About} />
