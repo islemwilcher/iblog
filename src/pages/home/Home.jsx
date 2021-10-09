@@ -32,7 +32,7 @@ const Home = () => {
                             <Typography className={classes.paragraph} variant='body-1'>as a software engineer Student i love helping others, beginners are looking everywhere, and there is a lot of resources which is so disturbing.<br />So i like to share WHERE and HOW to start and TIPS to make it easy</Typography>
                         </Paper>
                     </div>
-                    <img className={classes.freelencephoto} src={Why} alt="Why iBlog" />
+                    <img className={classes.freelencephoto} src={Why} alt="Why i-Blog" />
                 </Grid>
             </Container>
             <SocialMedia />
