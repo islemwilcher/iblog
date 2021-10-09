@@ -55,20 +55,20 @@ const Form = ({ currentId, setCurrentId }) => {
         <TextField name="message" variant="outlined" label="Message" fullWidth multiline rows={4} value={postData.message} onChange={(e) => setPostData({ ...postData, message: e.target.value })} />
         <TextField name="tags" variant="outlined" label="Tags (coma separated)" fullWidth value={postData.tags} onChange={(e) => setPostData({ ...postData, tags: e.target.value.split(',') })} />
         <div className={classes.fileInput}><FileBase type="file" multiple={false} onDone={({ base64 }) => setPostData({ ...postData, selectedFile: base64 })} /></div>
-        <TextField name="title" variant="outlined" label="Title" fullWidth value={postData.title1} onChange={(e) => setPostData({ ...postData, title: e.target.value })} />
-        <TextField name="message" variant="outlined" label="Message" fullWidth multiline rows={4} value={postData.message1} onChange={(e) => setPostData({ ...postData, message: e.target.value })} />
+        <TextField name="title1" variant="outlined" label="Title1" fullWidth value={postData.title1} onChange={(e) => setPostData({ ...postData, title1: e.target.value })} />
+        <TextField name="message" variant="outlined" label="Message" fullWidth multiline rows={4} value={postData.message1} onChange={(e) => setPostData({ ...postData, message1: e.target.value })} />
         <div className={classes.fileInput}><FileBase type="file" multiple={false} onDone={({ base64 }) => setPostData({ ...postData, selectedFile1: base64 })} /></div>
-        <TextField name="title" variant="outlined" label="Title" fullWidth value={postData.title2} onChange={(e) => setPostData({ ...postData, title: e.target.value })} />
-        <TextField name="message" variant="outlined" label="Message" fullWidth multiline rows={4} value={postData.message2} onChange={(e) => setPostData({ ...postData, message: e.target.value })} />
+        <TextField name="title" variant="outlined" label="Title2" fullWidth value={postData.title2} onChange={(e) => setPostData({ ...postData, title2: e.target.value })} />
+        <TextField name="message" variant="outlined" label="Message" fullWidth multiline rows={4} value={postData.message2} onChange={(e) => setPostData({ ...postData, message2: e.target.value })} />
         <div className={classes.fileInput}><FileBase type="file" multiple={false} onDone={({ base64 }) => setPostData({ ...postData, selectedFile2: base64 })} /></div>
-        <TextField name="title" variant="outlined" label="Title" fullWidth value={postData.title3} onChange={(e) => setPostData({ ...postData, title: e.target.value })} />
-        <TextField name="message" variant="outlined" label="Message" fullWidth multiline rows={4} value={postData.message3} onChange={(e) => setPostData({ ...postData, message: e.target.value })} />
+        <TextField name="title" variant="outlined" label="Title3" fullWidth value={postData.title3} onChange={(e) => setPostData({ ...postData, title3: e.target.value })} />
+        <TextField name="message" variant="outlined" label="Message" fullWidth multiline rows={4} value={postData.message3} onChange={(e) => setPostData({ ...postData, message3: e.target.value })} />
         <div className={classes.fileInput}><FileBase type="file" multiple={false} onDone={({ base64 }) => setPostData({ ...postData, selectedFile3: base64 })} /></div>
-        <TextField name="title" variant="outlined" label="Title" fullWidth value={postData.title4} onChange={(e) => setPostData({ ...postData, title: e.target.value })} />
-        <TextField name="message" variant="outlined" label="Message" fullWidth multiline rows={4} value={postData.message4} onChange={(e) => setPostData({ ...postData, message: e.target.value })} />
+        <TextField name="title" variant="outlined" label="Title4" fullWidth value={postData.title4} onChange={(e) => setPostData({ ...postData, title4: e.target.value })} />
+        <TextField name="message" variant="outlined" label="Message" fullWidth multiline rows={4} value={postData.message4} onChange={(e) => setPostData({ ...postData, message4: e.target.value })} />
         <div className={classes.fileInput}><FileBase type="file" multiple={false} onDone={({ base64 }) => setPostData({ ...postData, selectedFile4: base64 })} /></div>
-        <TextField name="title" variant="outlined" label="Title" fullWidth value={postData.title5} onChange={(e) => setPostData({ ...postData, title: e.target.value })} />
-        <TextField name="message" variant="outlined" label="Message" fullWidth multiline rows={4} value={postData.message5} onChange={(e) => setPostData({ ...postData, message: e.target.value })} />
+        <TextField name="title" variant="outlined" label="Title5" fullWidth value={postData.title5} onChange={(e) => setPostData({ ...postData, title5: e.target.value })} />
+        <TextField name="message" variant="outlined" label="Message" fullWidth multiline rows={4} value={postData.message5} onChange={(e) => setPostData({ ...postData, message5: e.target.value })} />
         <div className={classes.fileInput}><FileBase type="file" multiple={false} onDone={({ base64 }) => setPostData({ ...postData, selectedFile5: base64 })} /></div>
         <Button className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Submit</Button>
         <Button variant="contained" color="secondary" size="small" onClick={clear} fullWidth>Clear</Button>
