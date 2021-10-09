@@ -30,4 +30,7 @@ export default makeStyles({
     color: 'gray',
     fontWeight: 300,
   },
+  base: {
+    cursor: 'pointer',
+  },
 });

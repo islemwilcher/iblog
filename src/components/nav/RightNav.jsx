@@ -95,7 +95,7 @@ const RightNav = ({ open }) => {
             <Link style={navStyle} to="/signin"><li>
                 {user
                     ? <Button variant="contained" size='small' color='secondary' onClick={logout}>Log out</Button> 
-                    : <Button variant="contained" size='small' color='primary'>Sign in</Button>
+                    : <Button variant="contained" size='small' color='primary' >Sign in</Button>
                 }</li></Link>
         </Ul>
     )

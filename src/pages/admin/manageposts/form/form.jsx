@@ -10,7 +10,8 @@ const Form = ({ currentId, setCurrentId }) => {
   const [postData, setPostData] = useState({
     creator: '', title: '', message: '', tags: '', selectedFile: '',
     title1: '', message1: '', selectedFile1: '',
-    title2: '', message2: '', selectedFile3: '',
+    title2: '', message2: '', selectedFile2: '',
+    title3: '', message3: '', selectedFile3: '',
     title4: '', message4: '', selectedFile4: '',
     title5: '', message5: '', selectedFile5: ''
  });

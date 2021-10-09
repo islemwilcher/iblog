@@ -2,15 +2,16 @@ import React from 'react'
 import Logo from './logo.jpg';
 import styled from 'styled-components';
 import Burger from './Burger'
+import { Link } from 'react-router-dom';
 
 const Nav = styled.nav`
     width: 100%;
-    padding: 0 40px;
+    padding: 10px 40px;
     align-items: center;
     text-align:center;
     display: flex;
     justify-content: space-between;
-    height:12vh;
+    height:auto;
     box-shadow: 2px 2px 6px grey;
 
     .logo {
@@ -21,21 +22,24 @@ const Nav = styled.nav`
         img{
             border-radius: 50%;
         }
-        
-        h3{
-            margin-left: 20px;
-            font-weight: 400;
-            font-size: 35px;
-        }
     }
 `
 
 const Navbar = () => {
+    const navStyle = {
+        color: 'black',
+        textDecoration: 'none',
+        fontSize: '35px',
+        marginLeft: '20px',
+        marginBottom: '5px'
+    };
     return (
         <Nav>
             <div className="logo">
-                <img src={Logo} alt="logo" width="60px" height="60px" />
-                <h3>iBlog</h3>
+                <Link to='/'>
+                    <img src={Logo} alt="logo" width="60px" height="60px" />
+                </Link>
+                <Link style={navStyle} to='/'>iBlog</Link>
             </div>
             <Burger />
         </Nav>

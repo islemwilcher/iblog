@@ -1,22 +1,28 @@
 
-import { Card, CardMedia, Button, Typography } from '@material-ui/core/';
+import { Card, CardMedia, Button, Typography } from '@material-ui/core';
 import DeleteIcon from '@material-ui/icons/Delete';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import moment from 'moment';
 import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 
 import { deletePost } from '../../../../../actions/posts';
 import useStyles from './styles';
 
 const Post = ({ post, setCurrentId, visible }) => {
   const dispatch = useDispatch();
+  const history = useHistory();
   const classes = useStyles();
 
   const user = JSON.parse(localStorage.getItem('profile'))
 
+  const openPost = () => {
+    history.push(`/posts/${post._id}`)
+  }
+
   return (
     <Card className={classes.card}>
-      <div>
+      <div className={classes.base} onClick={openPost}>
         <CardMedia className={classes.media} image={post.selectedFile} title={post.title} />
 
         <div className={classes.details}>

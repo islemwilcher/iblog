@@ -20,7 +20,7 @@ const ManagePosts = () => {
     return (
         <Grow in>
             <Container className={classes.grow}>
-                <Grid className={classes.grid} container justify="space-between" alignItems="stretch" spacing={3}>
+                <Grid className={classes.grid} container alignItems="stretch" spacing={3}>
                     <Grid item xs={12} sm={8}>
                         <Posts setCurrentId={setCurrentId} visible={visible} />
                     </Grid>
