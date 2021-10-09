@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,KACI,wBACJ,CAEA,EACI,0CACJ","file":"main.8c3e6229.chunk.css","sourcesContent":["body {\r\n    background-color: #f7f8fc;\r\n}\r\n\r\n* {\r\n    font-family: 'Poppins', sans-serif !important;\r\n}\r\n/*\r\n thin 100 => 200 => 300 => 400 => 500;\r\n*/"]}
