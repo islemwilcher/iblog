@@ -6,6 +6,12 @@ export default makeStyles((theme) => ({
         justifyContent: 'space-between',
         marginBottom: '30px',
     },
+    gridR : {
+        display: 'flex',
+        flexDirection: 'row-reverse',
+        justifyContent: 'space-between',
+        marginBottom: '30px',
+    },
     content: {
         width: '45%',
         display:'flex',
@@ -22,9 +28,25 @@ export default makeStyles((theme) => ({
     },
     media: {
         height: 0,
-         borderRadius: '10px',
+        borderRadius: '10px',
         paddingTop: '56.25%',
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
         backgroundBlendMode: 'darken',
+    },
+    [theme.breakpoints.down('sm')]: {
+      grid: {
+          display: 'flex',
+          flexDirection: 'column',
+      },
+      gridR: {
+          display: 'flex',
+          flexDirection: 'column',
+      },
+      content: {
+        width: '100%',
+    },
+    pic: {
+        width: '100%',
+    },
     },
 }));

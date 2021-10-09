@@ -25,12 +25,22 @@ export default makeStyles((theme) => ({
         height: '450px',
         width: '800px',
         margin: '30px auto 0 auto',
-      },
+    },
     media: {
         height: 0,
-         borderRadius: '10px',
+        borderRadius: '10px',
         paddingTop: '56.25%',
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
         backgroundBlendMode: 'darken',
+    },
+    [theme.breakpoints.down('sm')]: {
+        mediadiv: {
+            height: 'auto',
+            width: '100%',
+            margin: '30px auto 0 auto',
+        },
+        tags: {
+            margin: 0,
+        },
     },
 }));
