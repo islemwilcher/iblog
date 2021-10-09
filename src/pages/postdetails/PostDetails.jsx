@@ -37,7 +37,7 @@ const Postdetails = () => {
       <div className={classes.mediadiv}>
       <CardMedia className={classes.media} image={post.selectedFile} title={post.title} />
       </div>
-      <Typography className={classes.tags} variant="body2" color="textSecondary" component="h2">{post.tags.map((tag) => `#${tag} `)}</Typography>
+      <Typography className={classes.tags} variant="body2" component="h2">{post.tags.map((tag) => `#${tag} `)}</Typography>
       <Typography className={classes.message} variant="body1">{post.message}</Typography>
       </div>
       <Details reverse={reverse} title={post.title1} message={post.message1} image={post.selectedFile1} />

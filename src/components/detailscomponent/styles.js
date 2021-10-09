@@ -47,6 +47,7 @@ export default makeStyles((theme) => ({
     },
     pic: {
         width: '100%',
+        marginTop: '5px',
     },
     },
 }));

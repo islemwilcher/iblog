@@ -6,6 +6,7 @@ import { Container, Paper, Grid, Button , Typography, TextField } from "@materia
 
 import { signin } from '../../actions/auth'
 import useStyles from './styles'
+import SocialMedia from '../../components/socialmedia/SocialMedia'
 
 const Signin = () => {
 
@@ -24,6 +25,7 @@ const Signin = () => {
 
     return (
         <Container component="main" maxWidth="xs">
+            <SocialMedia />
             <Paper className={classes.paper} raised elevation={3}>
                 <Typography component="h1" variant="h4">Sign in</Typography>
                 <form className={classes.form} onSubmit={handleSubmit}>

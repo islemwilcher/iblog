@@ -16,6 +16,7 @@ export default makeStyles((theme) => ({
     },
     tags: {
         margin: '5px auto',
+        color: 'gray',
     },
     message: {
         color: 'black',
