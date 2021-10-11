@@ -136,5 +136,8 @@ export default makeStyles((theme) => ({
             width: '100%',
             padding: '10px',
         },
+        instagramfeedpaper : {
+            width: '300px',
+        },
     },
 }));

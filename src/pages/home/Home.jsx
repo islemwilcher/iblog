@@ -69,12 +69,12 @@ const Home = () => {
                         <img className={classes.instagramfeed} src={instagramfeed2} alt="instagramfeed" width="100%" />
                     </Paper>
                     </Flip>
-                    <Zoom>
+                    <Flip left>
                     <Paper raised elevation={6} className={classes.instagramfeedpaper} >
                         <img className={classes.instagramfeed} src={instagramfeed1} alt="instagramfeed" width="100%" />
                     </Paper>
-                    </Zoom>
-                    <Flip right>
+                    </Flip>
+                    <Flip left>
                     <Paper raised elevation={6} className={classes.instagramfeedpaper} >
                         <img className={classes.instagramfeed} src={instagramfeed3} alt="instagramfeed" width="100%" />
                     </Paper>
