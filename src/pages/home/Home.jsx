@@ -49,6 +49,7 @@ const Home = () => {
                 <img className={classes.media2} src={MessagePhoto} alt="MessagePhoto" width="100%" />
             </div>
             <Container className={classes.container}>
+            <Typography className={classes.title1} variant='h4' gutterBottom>INSTAGRAM PHOTOS</Typography>
                 <Grid className={classes.instagramfeedgrid} spacing={3}>
                     <Paper raised elevation={6} className={classes.instagramfeedpaper} >
                         <img className={classes.instagramfeed} src={instagramfeed2} alt="instagramfeed" width="100%" />

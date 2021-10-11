@@ -8,7 +8,7 @@ export default makeStyles((theme) => ({
         height: '550px',
     },
     media2: {
-        height: '420px',
+        height: '450px',
         borderRadius: '0px 100px 0px 100px',
     },
 
@@ -94,7 +94,7 @@ export default makeStyles((theme) => ({
             height: '60vh',
         },
         media2: {
-            height: '40vh',
+            height: '50vh',
             borderRadius: '0px 20px 0px 20px',
         },
         freelencegrid: {
