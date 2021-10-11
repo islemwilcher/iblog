@@ -4,7 +4,6 @@ import useStyles from './styles'
 import SocialMedia from '../../components/socialmedia/SocialMedia'
 import LightSpeed from 'react-reveal/LightSpeed';
 import Zoom from 'react-reveal/Zoom';
-import Example from '../../components/loading'
 const About = () => {
 
     const classes = useStyles()
@@ -31,7 +30,6 @@ const About = () => {
             <Typography className={classes.paragraph} variant='body-1'>-Web Development: frontend / backend / apis / step by step to FULL-STACK</Typography><br />
             <Typography className={classes.paragraph} variant='body-1'>-UI/UX Design: Rules and Tools</Typography>
             </Zoom>
-            {/*<Example type={type} color={color} /> */}
         </Container>
     )
 }
