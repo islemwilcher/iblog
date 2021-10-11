@@ -85,15 +85,15 @@ const RightNav = ({ open, setOpen }) => {
     return (
         <>
         <Ul open = {open}>
-            <Link style={navStyle} to="/iblog" ><li>Home</li></Link>
-            <Link style={navStyle} to="/iblog/allposts"><li>All Posts</li></Link>
-            <Link style={navStyle} to="/iblog/about" ><li>About</li></Link>
+            <Link style={navStyle} to="/iblog"  onClick = {() => setOpen(!open)}><li>Home</li></Link>
+            <Link style={navStyle} to="/iblog/allposts"  onClick = {() => setOpen(!open)}><li>All Posts</li></Link>
+            <Link style={navStyle} to="/iblog/about"  onClick = {() => setOpen(!open)}><li>About</li></Link>
             {user
-                ? <Link style={navStyle} to="/iblog/dashboard"><li>Dashboard</li></Link>
+                ? <Link style={navStyle} to="/iblog/dashboard"  onClick = {() => setOpen(!open)}><li>Dashboard</li></Link>
                 : null
             }
             
-            <Link style={navStyle} to="/iblog/signin"><li>
+            <Link style={navStyle} to="/iblog/signin"  onClick = {() => setOpen(!open)}><li>
                 {user
                     ? <Button variant="contained" size='small' color='secondary' onClick={logout}>Log out</Button> 
                     : <Button variant="contained" size='small' color='primary' >Sign in</Button>
