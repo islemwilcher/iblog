@@ -5,6 +5,7 @@ import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import moment from 'moment';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import Zoom from 'react-reveal/Zoom';
 
 import { deletePost } from '../../../../../actions/posts';
 import useStyles from './styles';
@@ -21,6 +22,7 @@ const Post = ({ post, setCurrentId, visible }) => {
   }
 
   return (
+    <Zoom >
     <Card className={classes.card} raised elevation={3} >
       <div className={classes.base} onClick={openPost}>
         <CardMedia className={classes.media} image={post.selectedFile} title={post.title} />
@@ -47,6 +49,7 @@ const Post = ({ post, setCurrentId, visible }) => {
       </div>
       
     </Card>
+    </Zoom>
   );
 };
 

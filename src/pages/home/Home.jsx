@@ -1,6 +1,7 @@
 
 import { Container, Grid, Paper, Typography } from '@material-ui/core'
-
+import Zoom from 'react-reveal/Zoom';
+import Flip from 'react-reveal/Flip';
 import SocialMedia from '../../components/socialmedia/SocialMedia'
 
 import MainPhoto from '../../assets/mainphoto.jpg'
@@ -17,19 +18,25 @@ const Home = () => {
     const classes = useStyles()
     return (
         <>
+            <Zoom top>
             <div>
                 <img className={classes.media} src={MainPhoto} alt="MainPhoto" width="100%" />
             </div>
+            </Zoom>
             <Container className={classes.container}>
                 <Grid className={classes.freelencegrid}>
-                <img className={classes.welcomephoto} src={WelcomePhoto} alt="Welcome Photo" />
+                <Flip left>
+                <img  className={classes.welcomephoto} src={WelcomePhoto} alt="Welcome Photo" />
+                </Flip>
                 <div className={classes.freelencediv} >
                     <Typography className={classes.title1} variant='h4' gutterBottom>Welcome to iBlog</Typography>
+                    <Zoom>
                     <Paper className={classes.freelencedivh1} raised elevation={6}>
                         <Typography className={classes.paragraph} variant='body1'>
                             -Development ,<br /> -Design,<br />-Engineering Content and Tips
                         </Typography>
                     </Paper>
+                    </Zoom>
                 </div>
                 </Grid>
             </Container>
@@ -37,29 +44,41 @@ const Home = () => {
                 <Grid className={classes.whygrid}>
                     <div className={classes.whysection}>
                         <Typography className={classes.title1} variant='h4' gutterBottom>WHY I CREATE iBlog</Typography>
+                        <Zoom>
                         <Paper className={classes.paragraphpaper} raised elevation={6}>
                             <Typography className={classes.paragraph} variant='body1'>as a software engineer Student i love helping others, beginners are looking everywhere, and there are a lot of resources which is so disturbing.<br />So i like to share WHERE and HOW to start and TIPS to make it easier</Typography>
                         </Paper>
+                        </Zoom>
                     </div>
+                    <Flip right>
                     <img className={classes.whyphoto} src={Why} alt="Why i-Blog" />
+                    </Flip>
                 </Grid>
             </Container>
             <SocialMedia />
+            <Zoom top>
             <div>
                 <img className={classes.media2} src={MessagePhoto} alt="MessagePhoto" width="100%" />
             </div>
+            </Zoom>
             <Container className={classes.container}>
             <Typography className={classes.title1} variant='h4' gutterBottom>INSTAGRAM PHOTOS</Typography>
                 <Grid className={classes.instagramfeedgrid} spacing={3}>
+                    <Flip left>
                     <Paper raised elevation={6} className={classes.instagramfeedpaper} >
                         <img className={classes.instagramfeed} src={instagramfeed2} alt="instagramfeed" width="100%" />
                     </Paper>
+                    </Flip>
+                    <Zoom>
                     <Paper raised elevation={6} className={classes.instagramfeedpaper} >
                         <img className={classes.instagramfeed} src={instagramfeed1} alt="instagramfeed" width="100%" />
                     </Paper>
+                    </Zoom>
+                    <Flip right>
                     <Paper raised elevation={6} className={classes.instagramfeedpaper} >
                         <img className={classes.instagramfeed} src={instagramfeed3} alt="instagramfeed" width="100%" />
                     </Paper>
+                    </Flip>
                 </Grid>
             </Container>
             <SocialMedia />

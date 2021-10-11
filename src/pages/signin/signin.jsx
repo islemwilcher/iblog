@@ -36,7 +36,7 @@ const Signin = () => {
                 <Button type="submit" fullWidth variant="contained" color="primary" className={classes.submit} >
                     Sign In
                 </Button>
-                <Typography variant="body2">This is private a blog only the admin allowed to sign in yet!</Typography>
+                <Typography variant="body2">This is a private blog only the admin allowed to sign in yet!</Typography>
                 </form>
             </Paper>
         </Container>
