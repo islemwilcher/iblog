@@ -8,13 +8,12 @@ import Posts from '../admin/manageposts/posts/posts'
 import useStyles from './styles'
 const AllPosts = () => {
 
-    const dispatch = useDispatch();
+    const dispatch = useDispatch()
     const classes = useStyles()
 
     useEffect(() => {
-        dispatch(getPosts());
+        dispatch(getPosts())
       }, [dispatch]);
-    
     
     return (
         <Container className={classes.container}>

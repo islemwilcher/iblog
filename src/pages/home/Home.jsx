@@ -7,6 +7,9 @@ import MainPhoto from '../../assets/mainphoto.jpg'
 import WelcomePhoto from '../../assets/welcomephoto.jpg'
 import MessagePhoto from '../../assets/messagephoto.jpg'
 import Why from '../../assets/why.jpg'
+import instagramfeed1 from '../../assets/instagramfeed1.jpg'
+import instagramfeed2 from '../../assets/instagramfeed2.jpg'
+import instagramfeed3 from '../../assets/instagramfeed3.jpg'
 
 import useStyles from './styles'
 
@@ -19,7 +22,7 @@ const Home = () => {
             </div>
             <Container className={classes.container}>
                 <Grid className={classes.freelencegrid}>
-                <img className={classes.welcomeephoto} src={WelcomePhoto} alt="Freelence" />
+                <img className={classes.welcomephoto} src={WelcomePhoto} alt="Freelence" />
                 <div className={classes.freelencediv} >
                     <Typography className={classes.title1} variant='h4' gutterBottom>Welcome to iBlog</Typography>
                     <Paper className={classes.freelencedivh1} raised elevation={6}>
@@ -45,6 +48,20 @@ const Home = () => {
             <div>
                 <img className={classes.media2} src={MessagePhoto} alt="MessagePhoto" width="100%" />
             </div>
+            <Container className={classes.container}>
+                <Grid className={classes.instagramfeedgrid} spacing={3}>
+                    <Paper raised elevation={6} className={classes.instagramfeedpaper} >
+                        <img className={classes.instagramfeed} src={instagramfeed2} alt="instagramfeed" width="100%" />
+                    </Paper>
+                    <Paper raised elevation={6} className={classes.instagramfeedpaper} >
+                        <img className={classes.instagramfeed} src={instagramfeed1} alt="instagramfeed" width="100%" />
+                    </Paper>
+                    <Paper raised elevation={6} className={classes.instagramfeedpaper} >
+                        <img className={classes.instagramfeed} src={instagramfeed3} alt="instagramfeed" width="100%" />
+                    </Paper>
+                </Grid>
+            </Container>
+            <SocialMedia />
         </>
     )
 }

@@ -48,7 +48,7 @@ const Ul = styled.ul`
     }
 `;
     
-const RightNav = ({ open }) => {
+const RightNav = ({ open, setOpen }) => {
 
     
 
@@ -83,10 +83,11 @@ const RightNav = ({ open }) => {
     };
     
     return (
+        <>
         <Ul open = {open}>
             <Link style={navStyle} to="/iblog" ><li>Home</li></Link>
             <Link style={navStyle} to="/allposts"><li>All Posts</li></Link>
-            <Link style={navStyle} to="/about"><li>About</li></Link>
+            <Link style={navStyle} to="/about" ><li>About</li></Link>
             {user
                 ? <Link style={navStyle} to="/dashboard"><li>Dashboard</li></Link>
                 : null
@@ -98,6 +99,7 @@ const RightNav = ({ open }) => {
                     : <Button variant="contained" size='small' color='primary' >Sign in</Button>
                 }</li></Link>
         </Ul>
+        </>
     )
 }
 

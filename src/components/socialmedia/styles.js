@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles({
   socialmedia: {
-    margin: '35px auto',
+    margin: '60px auto',
     width: '300px',
     display: 'flex',
     justifyContent: 'space-between',

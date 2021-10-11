@@ -2,13 +2,14 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
     container: {
-        margin: '30px auto 0 auto',
+        margin: '60px auto 0 auto',
     },
     media: {
         height: '550px',
     },
     media2: {
         height: '420px',
+        borderRadius: '0px 100px 0px 100px',
     },
 
     title: {
@@ -21,7 +22,7 @@ export default makeStyles((theme) => ({
         justifyContent: 'center',
         flexDirection: 'space-between',
     },
-    welcomeephoto: {
+    welcomephoto: {
         width: '50%',
         padding: '30px',
         marginRight: '50px',
@@ -74,12 +75,27 @@ export default makeStyles((theme) => ({
         justifyContent: 'center',
         alignContent: 'center',
     },
+    instagramfeedgrid: {
+        marginTop: '30px',
+        marginBottom: '30px',
+        display: 'flex',
+        justifyContent: 'space-evenly',
+    },
+    instagramfeedpaper : {
+        margin: '10px auto',
+    },
+    instagramfeed : {
+        width: '300px',
+        height: '300px',
+        padding: '30px',
+    },
     [theme.breakpoints.down('sm')]: {
         media: {
             height: '60vh',
         },
         media2: {
             height: '40vh',
+            borderRadius: '0px 20px 0px 20px',
         },
         freelencegrid: {
             flexDirection: 'column-reverse',
@@ -110,6 +126,15 @@ export default makeStyles((theme) => ({
         whyphoto: {
             width: '100%',
             marginTop: '30px',
+        },
+        instagramfeedgrid: {
+            width: 'auto',
+            margin: 'auto',
+            flexDirection: 'column',
+        },
+        instagramfeed : {
+            width: '100%',
+            padding: '10px',
         },
     },
 }));
