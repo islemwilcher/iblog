@@ -25,6 +25,7 @@ export default makeStyles((theme) => ({
     },
     pic: {
         width: '45%',
+        alignSelf: 'center',
     },
     media: {
         height: 0,
