@@ -86,14 +86,14 @@ const RightNav = ({ open, setOpen }) => {
         <>
         <Ul open = {open}>
             <Link style={navStyle} to="/iblog" ><li>Home</li></Link>
-            <Link style={navStyle} to="/allposts"><li>All Posts</li></Link>
-            <Link style={navStyle} to="/about" ><li>About</li></Link>
+            <Link style={navStyle} to="/iblog/allposts"><li>All Posts</li></Link>
+            <Link style={navStyle} to="/iblog/about" ><li>About</li></Link>
             {user
                 ? <Link style={navStyle} to="/dashboard"><li>Dashboard</li></Link>
                 : null
             }
             
-            <Link style={navStyle} to="/signin"><li>
+            <Link style={navStyle} to="/iblog/signin"><li>
                 {user
                     ? <Button variant="contained" size='small' color='secondary' onClick={logout}>Log out</Button> 
                     : <Button variant="contained" size='small' color='primary' >Sign in</Button>
