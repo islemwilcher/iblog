@@ -22,14 +22,14 @@ const App = () => {
             <Router>
                     <Navbar />
                 <Switch>
-                    <Protectedroute exact path='/dashboard' component={Dashboard} />
-                    <Protectedroute exact path='/manageposts' component={ManagePosts} />
+                    <Protectedroute exact path='/iblog/dashboard' component={Dashboard} />
+                    <Protectedroute exact path='/iblog/manageposts' component={ManagePosts} />
                     <Route path="/" exact component={() => <Redirect to="/iblog" />} />
                     <Route path='/iblog' exact component={Home} />
-                    <Route path='/posts/:id' exact component={PostDetails} />
-                    <Route path="/allposts" component={AllPosts} />
-                    <Route path='/about' component={About} />
-                    <Route path='/signin' component={signin} />
+                    <Route path='/iblog/posts/:id' exact component={PostDetails} />
+                    <Route path="/iblog/allposts" component={AllPosts} />
+                    <Route path='/iblog/about' component={About} />
+                    <Route path='/iblog/signin' component={signin} />
                 </Switch>
                 
             </Router>
