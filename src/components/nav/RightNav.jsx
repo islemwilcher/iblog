@@ -89,7 +89,7 @@ const RightNav = ({ open, setOpen }) => {
             <Link style={navStyle} to="/iblog/allposts"><li>All Posts</li></Link>
             <Link style={navStyle} to="/iblog/about" ><li>About</li></Link>
             {user
-                ? <Link style={navStyle} to="/dashboard"><li>Dashboard</li></Link>
+                ? <Link style={navStyle} to="/iblog/dashboard"><li>Dashboard</li></Link>
                 : null
             }
             

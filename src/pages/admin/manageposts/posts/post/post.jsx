@@ -17,7 +17,7 @@ const Post = ({ post, setCurrentId, visible }) => {
   const user = JSON.parse(localStorage.getItem('profile'))
 
   const openPost = () => {
-    history.push(`/posts/${post._id}`)
+    history.push(`/iblog/posts/${post._id}`)
   }
 
   return (

@@ -12,6 +12,8 @@ const Dashboard = () => {
     };
     return (
         <Container>
+            <h2>dashboard</h2>
+            <Link style={navStyle} to='/iblog/manageposts' >manageposts</Link>
             <Paper className={classes.welcome} raised elevation={6}>
             <Typography className={classes.title1} variant='h6' gutterBottom>WELCOME ISLEM TO IbLOG<br />
             Have some tips, ideas or some Content.
@@ -25,7 +27,7 @@ const Dashboard = () => {
                             <br />
                             ADD, DELETE, UPDATE
                         </Typography>
-                        <Link style={navStyle} to='/manageposts' >
+                        <Link style={navStyle} to='/iblog/manageposts' >
                             <Button className={classes.managebtn} variant="contained" size='small' color='primary' >go to manage</Button>
                         </Link>
                     </Paper>
