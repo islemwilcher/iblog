@@ -22,7 +22,7 @@ const Home = () => {
             </div>
             <Container className={classes.container}>
                 <Grid className={classes.freelencegrid}>
-                <img className={classes.welcomephoto} src={WelcomePhoto} alt="Freelence" />
+                <img className={classes.welcomephoto} src={WelcomePhoto} alt="Welcome Photo" />
                 <div className={classes.freelencediv} >
                     <Typography className={classes.title1} variant='h4' gutterBottom>Welcome to iBlog</Typography>
                     <Paper className={classes.freelencedivh1} raised elevation={6}>
