@@ -3,7 +3,10 @@ import { Grid, CircularProgress } from '@material-ui/core';
 import { useSelector } from 'react-redux';
 
 import Post from './post/post';
+
 import useStyles from './styles';
+
+import './posts.css'
 
 const Posts = ({ setCurrentId, visible }) => {
   const {posts} = useSelector((state) => state.posts);
@@ -11,7 +14,13 @@ const Posts = ({ setCurrentId, visible }) => {
 
   return (
       !posts?.length 
-      ? <CircularProgress /> 
+      ? (
+        <div className='loading' >
+          <div className='bar one'></div>
+          <div className='bar two'></div>
+          <div className='bar three'></div>
+        </div>
+      )
       : (
         <Grid className={classes.container} container alignItems="stretch" spacing={3}>
           {posts.map((post) => (
