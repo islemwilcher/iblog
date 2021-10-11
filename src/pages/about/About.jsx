@@ -7,7 +7,7 @@ const About = () => {
 
     const classes = useStyles()
     return (
-        <Container>
+        <Container className={classes.container}>
             <SocialMedia />
             <Typography className={classes.maintitle} variant='h4'>About</Typography>
             <Typography className={classes.title} variant='h5' gutterBottom>About the Creator</Typography>

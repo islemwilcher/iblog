@@ -4,7 +4,8 @@ import { Container, Grid, Paper, Typography } from '@material-ui/core'
 import SocialMedia from '../../components/socialmedia/SocialMedia'
 
 import MainPhoto from '../../assets/mainphoto.jpg'
-import Freelence from '../../assets/freelence.jpg'
+import WelcomePhoto from '../../assets/welcomephoto.jpg'
+import MessagePhoto from '../../assets/messagephoto.jpg'
 import Why from '../../assets/why.jpg'
 
 import useStyles from './styles'
@@ -18,9 +19,14 @@ const Home = () => {
             </div>
             <Container className={classes.container}>
                 <Grid className={classes.freelencegrid}>
-                <img className={classes.freelencephoto} src={Freelence} alt="Freelence" />
+                <img className={classes.welcomeephoto} src={WelcomePhoto} alt="Freelence" />
                 <div className={classes.freelencediv} >
-                    <Paper className={classes.freelencedivh1} raised elevation={6}>looking for Freelencing!</Paper>
+                    <Typography className={classes.title1} variant='h4' gutterBottom>Welcome to iBlog</Typography>
+                    <Paper className={classes.freelencedivh1} raised elevation={6}>
+                        <Typography className={classes.paragraph} variant='body1'>
+                            -Development ,<br /> -Design,<br />-Engineering Content and Tips
+                        </Typography>
+                    </Paper>
                 </div>
                 </Grid>
             </Container>
@@ -29,13 +35,16 @@ const Home = () => {
                     <div className={classes.whysection}>
                         <Typography className={classes.title1} variant='h4' gutterBottom>WHY I CREATE iBlog</Typography>
                         <Paper className={classes.paragraphpaper} raised elevation={6}>
-                            <Typography className={classes.paragraph} variant='body-1'>as a software engineer Student i love helping others, beginners are looking everywhere, and there are a lot of resources which is so disturbing.<br />So i like to share WHERE and HOW to start and TIPS to make it easier</Typography>
+                            <Typography className={classes.paragraph} variant='body1'>as a software engineer Student i love helping others, beginners are looking everywhere, and there are a lot of resources which is so disturbing.<br />So i like to share WHERE and HOW to start and TIPS to make it easier</Typography>
                         </Paper>
                     </div>
-                    <img className={classes.freelencephoto} src={Why} alt="Why i-Blog" />
+                    <img className={classes.whyphoto} src={Why} alt="Why i-Blog" />
                 </Grid>
             </Container>
             <SocialMedia />
+            <div>
+                <img className={classes.media2} src={MessagePhoto} alt="MessagePhoto" width="100%" />
+            </div>
         </>
     )
 }

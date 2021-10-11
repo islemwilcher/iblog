@@ -7,6 +7,10 @@ export default makeStyles((theme) => ({
     media: {
         height: '550px',
     },
+    media2: {
+        height: '420px',
+    },
+
     title: {
         position: 'absolute',
         top: '50%',
@@ -17,9 +21,18 @@ export default makeStyles((theme) => ({
         justifyContent: 'center',
         flexDirection: 'space-between',
     },
-    freelencephoto: {
+    welcomeephoto: {
         width: '50%',
         padding: '30px',
+        marginRight: '50px',
+        height: '380px',
+        boxShadow: '2px 2px 6px grey',
+        backgroundColor: '#353c553f',
+    },
+    whyphoto: {
+        width: '50%',
+        padding: '30px',
+        marginRight: '50px',
         height: '380px',
         boxShadow: '2px 2px 6px grey',
     },
@@ -34,7 +47,7 @@ export default makeStyles((theme) => ({
         width: '60%',
         fontSize: '30px',
         margin: 'auto',
-        paddingLeft: '10px', 
+        padding: '20px', 
     },
     title1: {
         width: '60%',
@@ -45,6 +58,7 @@ export default makeStyles((theme) => ({
         fontWeight: '400',
     },
     paragraphpaper: {
+        cursor: 'pointer',
         width: '60%',
         padding: '20px',
         margin: 'auto',
@@ -63,6 +77,9 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
         media: {
             height: '60vh',
+        },
+        media2: {
+            height: '40vh',
         },
         freelencegrid: {
             flexDirection: 'column-reverse',
@@ -86,7 +103,11 @@ export default makeStyles((theme) => ({
             width: '100%',
         },
 
-        freelencephoto: {
+        welcomephoto: {
+            width: '100%',
+            marginTop: '30px',
+        },
+        whyphoto: {
             width: '100%',
             marginTop: '30px',
         },
