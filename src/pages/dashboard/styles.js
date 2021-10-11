@@ -7,6 +7,7 @@ export default makeStyles((theme) => ({
       padding: '10px',
   },
   welcomeaction: {
+      backgroundColor: '#B4CBFE',
       width: '300px',
       margin: '10px',
       padding: '20px',
@@ -18,11 +19,15 @@ export default makeStyles((theme) => ({
   },
   managebtn: {
       width: '100%',
-      backgroundColor: 'green',
+      backgroundColor: '#0000FF',
   },
   [theme.breakpoints.down('sm')]: {
     welcomegrid: {
+        width: 'auto',
         flexDirection: 'column',
+    },
+    welcomeaction: {
+        width: 'auto',
     },
   },
 }));

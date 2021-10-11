@@ -20,6 +20,11 @@ const Ul = styled.ul`
         font-weight: 400;
         color : black;
 
+        .logoutbtn {
+            background-color: #f44336;
+            color: white;
+            fontSize: 20px;
+        }
     }
     li:hover{
         color: rgb(136, 165, 219);
@@ -95,7 +100,7 @@ const RightNav = ({ open, setOpen }) => {
             
             <Link style={navStyle} to="/iblog/signin"  onClick = {() => setOpen(!open)}><li>
                 {user
-                    ? <Button variant="contained" size='small' color='secondary' onClick={logout}>Log out</Button> 
+                    ? <Button variant="contained" size='small' className='logoutbtn' onClick={logout}>Log out</Button> 
                     : <Button variant="contained" size='small' color='primary' >Sign in</Button>
                 }</li></Link>
         </Ul>

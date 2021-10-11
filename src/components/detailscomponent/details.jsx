@@ -17,11 +17,13 @@ const Details = ({ reverse, title, message, image }) => {
                         <Typography className={classes.message} variant="body1">{message}</Typography>
                     </div>
                     </Zoom>
-                    <Flip left>
+                    
                     <Grid className={classes.pic}>
-                        <CardMedia className={classes.media} image={image} title={title} />
+                        <Flip left>
+                            <CardMedia className={classes.media} image={image} title={title} />
+                        </Flip>
                     </Grid>
-                    </Flip>
+                    
                 </Grid>
             </>  
             
