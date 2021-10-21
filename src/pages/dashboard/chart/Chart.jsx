@@ -1,20 +1,23 @@
 
-
+import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
 import { Bar } from 'react-chartjs-2'
 import useStyles from './styles';
+import { Paper } from '@material-ui/core';
 
 const Chart = () => {
-    const classes = useStyles();
-    const {posts} = useSelector((state) => state.posts);
-
+    const classes = useStyles()
+    const { posts } = useSelector((state) => state.posts)
+    
     const data = {
         labels: ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
         datasets: [
             {
                 label: 'posts for 2022',
-                data: posts.post,
+                data: [
+                    Object.keys(posts).length,//.createdAt commpared with the month 
+                ],
                 backgroundColor: ['rgb(136, 165, 219)']
             }
         ]
@@ -38,7 +41,10 @@ const Chart = () => {
     }
 
     return (
-        <Bar className={classes.chart} data={data} options={options} />
+        <Paper>
+            <Bar className={classes.chart} data={data} options={options} />
+        </Paper>
+        
     )
 }
 

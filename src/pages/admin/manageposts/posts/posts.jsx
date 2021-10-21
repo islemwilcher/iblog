@@ -14,7 +14,6 @@ const Posts = ({ setCurrentId, visible }) => {
   const classes = useStyles();
   const type = 'bars'
   const color = 'black'
-
   return (
       !posts?.length 
       ? (
