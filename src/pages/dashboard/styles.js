@@ -13,10 +13,13 @@ export default makeStyles((theme) => ({
       padding: '20px',
   },
   chart: {
+      display: 'flex',
+      justifyContent: 'center',
       backgroundColor: '#B4CBFE',
       width: '300px',
+      height: '160px',
       margin: '10px',
-      padding: '2px',
+      padding: '1px',
   },
   welcomegrid: {
       width: '100%',
