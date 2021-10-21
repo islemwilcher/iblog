@@ -1,13 +1,19 @@
 body {
-    background-color: #f7f8fc7e;
+  background-color: #f7f8fc7e;
 }
 
 * {
-    font-family: 'Poppins', sans-serif !important;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+.center {
+  margin: auto;
+  width: 300px;
+  height: 200px;
+}
+
 /*
  thin 100 => 200 => 300 => 400 => 500;
 */
