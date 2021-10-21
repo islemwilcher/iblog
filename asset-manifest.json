@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/iblog/static/css/main.21a529b0.chunk.css",
-    "main.js": "/iblog/static/js/main.4fdd0aee.chunk.js",
-    "main.js.map": "/iblog/static/js/main.4fdd0aee.chunk.js.map",
+    "main.css": "/iblog/static/css/main.44fb0f97.chunk.css",
+    "main.js": "/iblog/static/js/main.7ff08b78.chunk.js",
+    "main.js.map": "/iblog/static/js/main.7ff08b78.chunk.js.map",
     "runtime-main.js": "/iblog/static/js/runtime-main.779825e1.js",
     "runtime-main.js.map": "/iblog/static/js/runtime-main.779825e1.js.map",
-    "static/js/2.b586c490.chunk.js": "/iblog/static/js/2.b586c490.chunk.js",
-    "static/js/2.b586c490.chunk.js.map": "/iblog/static/js/2.b586c490.chunk.js.map",
+    "static/js/2.06bf08e9.chunk.js": "/iblog/static/js/2.06bf08e9.chunk.js",
+    "static/js/2.06bf08e9.chunk.js.map": "/iblog/static/js/2.06bf08e9.chunk.js.map",
     "index.html": "/iblog/index.html",
-    "static/css/main.21a529b0.chunk.css.map": "/iblog/static/css/main.21a529b0.chunk.css.map",
-    "static/js/2.b586c490.chunk.js.LICENSE.txt": "/iblog/static/js/2.b586c490.chunk.js.LICENSE.txt",
+    "static/css/main.44fb0f97.chunk.css.map": "/iblog/static/css/main.44fb0f97.chunk.css.map",
+    "static/js/2.06bf08e9.chunk.js.LICENSE.txt": "/iblog/static/js/2.06bf08e9.chunk.js.LICENSE.txt",
+    "static/media/header.css": "/iblog/static/media/headerpic.405bd3b6.jpg",
     "static/media/instagramfeed1.d3587880.jpg": "/iblog/static/media/instagramfeed1.d3587880.jpg",
     "static/media/instagramfeed2.e4b638f5.jpg": "/iblog/static/media/instagramfeed2.e4b638f5.jpg",
     "static/media/instagramfeed3.5de6ae2e.jpg": "/iblog/static/media/instagramfeed3.5de6ae2e.jpg",
     "static/media/logo.11480c7a.jpg": "/iblog/static/media/logo.11480c7a.jpg",
-    "static/media/mainphoto.4afeeafa.jpg": "/iblog/static/media/mainphoto.4afeeafa.jpg",
     "static/media/messagephoto.c61b3adc.jpg": "/iblog/static/media/messagephoto.c61b3adc.jpg",
+    "static/media/welcomephoto.db5dcc94.jpg": "/iblog/static/media/welcomephoto.db5dcc94.jpg",
     "static/media/why.e9be37a3.jpg": "/iblog/static/media/why.e9be37a3.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.779825e1.js",
-    "static/js/2.b586c490.chunk.js",
-    "static/css/main.21a529b0.chunk.css",
-    "static/js/main.4fdd0aee.chunk.js"
+    "static/js/2.06bf08e9.chunk.js",
+    "static/css/main.44fb0f97.chunk.css",
+    "static/js/main.7ff08b78.chunk.js"
   ]
 }
