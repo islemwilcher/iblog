@@ -4,6 +4,7 @@ export default makeStyles((theme) => ({
   chart: {
       width: {
           width: '300px',
+          padding: '10px',
       },
   }
 }));

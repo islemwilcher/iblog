@@ -12,8 +12,6 @@ const Dashboard = () => {
     };
     return (
         <Container>
-            <h2>dashboard</h2>
-            <Link style={navStyle} to='/iblog/manageposts' >manageposts</Link>
             <Paper className={classes.welcome} raised elevation={6}>
             <Typography className={classes.title1} variant='h6' gutterBottom>WELCOME ISLEM TO IbLOG<br />
             Have some tips, ideas or some Content.
@@ -21,6 +19,9 @@ const Dashboard = () => {
             </Paper>
             <Container>
                 <Grid className={classes.welcomegrid}>
+                    <Paper className={classes.chart} raised elevation={6}>
+                        <Chart />
+                    </Paper>
                     <Paper className={classes.welcomeaction} raised elevation={6}>
                         <Typography className={classes.title1} variant='h6' gutterBottom>
                             manage your post
@@ -31,10 +32,9 @@ const Dashboard = () => {
                             <Button className={classes.managebtn} variant="contained" size='small' color='primary' >go to manage</Button>
                         </Link>
                     </Paper>
-                    <Paper className={classes.welcomeaction} raised elevation={6}>
-                        <Typography className={classes.title1} variant='h6' gutterBottom>
-                        </Typography>
-                    </Paper>
+                    
+                    
+
                     <Paper className={classes.welcomeaction} raised elevation={6}>
                         <Typography className={classes.title1} variant='h6' gutterBottom>
                         </Typography>
@@ -45,7 +45,6 @@ const Dashboard = () => {
                     </Paper>
                 </Grid>
             </Container>
-            <Chart />
         </Container>
     )
 }

@@ -12,6 +12,12 @@ export default makeStyles((theme) => ({
       margin: '10px',
       padding: '20px',
   },
+  chart: {
+      backgroundColor: '#B4CBFE',
+      width: '300px',
+      margin: '10px',
+      padding: '2px',
+  },
   welcomegrid: {
       width: '100%',
       display: 'flex',

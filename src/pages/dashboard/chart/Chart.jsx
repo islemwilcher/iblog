@@ -41,8 +41,8 @@ const Chart = () => {
     }
 
     return (
-        <Paper>
-            <Bar className={classes.chart} data={data} options={options} />
+        <Paper className={classes.chart}>
+            <Bar data={data} options={options} />
         </Paper>
         
     )
