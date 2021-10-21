@@ -18,6 +18,7 @@ const Postdetails = () => {
   const dispatch = useDispatch();
   const { id } = useParams();
   const classes = useStyles()
+  
   const reverse = true
   const type = 'bars'
   const color = 'black'

@@ -13,16 +13,13 @@ import instagramfeed2 from '../../assets/instagramfeed2.jpg'
 import instagramfeed3 from '../../assets/instagramfeed3.jpg'
 
 import useStyles from './styles'
+import Header from './homeheader/Header';
 
 const Home = () => {
     const classes = useStyles()
     return (
         <>
-            <Zoom top>
-            <div>
-                <img className={classes.media} src={MainPhoto} alt="MainPhoto" width="100%" />
-            </div>
-            </Zoom>
+            <Header />
             <Container className={classes.container}>
                 <Grid className={classes.freelencegrid}>
                 <Flip left>
