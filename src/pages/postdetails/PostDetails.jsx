@@ -47,10 +47,10 @@ const Postdetails = () => {
       <CardMedia className={classes.media} image={post.selectedFile} title={post.title} />
       </Flip>
       </div>
-      <Flip right>
+      <Zoom >
       <Typography className={classes.tags} variant="body2" component="h2">{post.tags.map((tag) => `#${tag} `)}</Typography>
-      </Flip>
-      <Zoom>
+      </Zoom>
+      <Zoom >
       <Typography className={classes.message} variant="body1">{post.message}</Typography>
       </Zoom>
       </div>

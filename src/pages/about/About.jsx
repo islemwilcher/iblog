@@ -12,9 +12,7 @@ const About = () => {
     return (
         <Container className={classes.container}>
             <SocialMedia />
-            <Zoom bottom>
             <Typography className={classes.maintitle} variant='h4'>About</Typography>
-            </Zoom>
             <LightSpeed right>
             <Typography className={classes.title} variant='h5' gutterBottom>About the Creator</Typography>
             </LightSpeed>

@@ -9,7 +9,6 @@ export default makeStyles((theme) => ({
     },
     media2: {
         height: '450px',
-        borderRadius: '0px 100px 0px 100px',
     },
 
     title: {
@@ -94,7 +93,6 @@ export default makeStyles((theme) => ({
         },
         media2: {
             height: '60vh',
-            borderRadius: '0px 20px 0px 20px',
         },
         freelencegrid: {
             flexDirection: 'column-reverse',

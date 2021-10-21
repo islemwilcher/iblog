@@ -53,7 +53,7 @@ const Home = () => {
                 </Grid>
             </Container>
             <SocialMedia />
-            <Zoom top>
+            <Zoom>
             <div>
                 <img className={classes.media2} src={MessagePhoto} alt="MessagePhoto" width="100%" />
             </div>
