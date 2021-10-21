@@ -1,7 +1,7 @@
 
 import { Container, Paper, Typography, Grid, Button } from '@material-ui/core'
 import { Link } from 'react-router-dom'
-
+import Chart from './chart/Chart'
 import useStyles from './styles'
 const Dashboard = () => {
     const classes = useStyles()
@@ -45,6 +45,7 @@ const Dashboard = () => {
                     </Paper>
                 </Grid>
             </Container>
+            <Chart />
         </Container>
     )
 }

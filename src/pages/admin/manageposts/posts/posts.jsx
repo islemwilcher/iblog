@@ -4,21 +4,22 @@ import { useSelector } from 'react-redux';
 
 import Post from './post/post';
 
+import Loading from '../../../../components/Loading'
+
 import useStyles from './styles';
 
-import './posts.css'
 
 const Posts = ({ setCurrentId, visible }) => {
   const {posts} = useSelector((state) => state.posts);
   const classes = useStyles();
+  const type = 'bars'
+  const color = 'black'
 
   return (
       !posts?.length 
       ? (
-        <div className='loading' >
-          <div className='bar one'></div>
-          <div className='bar two'></div>
-          <div className='bar three'></div>
+        <div className={classes.center}>
+        <Loading type={type} color={color} />
         </div>
       )
       : (

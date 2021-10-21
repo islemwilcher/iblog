@@ -11,4 +11,9 @@ export default makeStyles((theme) => ({
   actionDiv: {
     textAlign: 'center',
   },
+  center: {
+    margin: 'auto',
+    width: '300px',
+    height: '200px',
+  },
 }));

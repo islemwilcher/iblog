@@ -42,6 +42,8 @@ const App = () => {
             <Router>
                     <Navbar />
                 <Switch>
+                    <Protectedroute exact path='/iblog/dashboard' component={Dashboard} />
+                    <Protectedroute exact path='/iblog/manageposts' component={ManagePosts} />
                     <>
                     {!completed
                         ? (
@@ -54,8 +56,7 @@ const App = () => {
                         )
                         : (
                             <>
-                                <Protectedroute exact path='/iblog/dashboard' component={Dashboard} />
-                                <Protectedroute exact path='/iblog/manageposts' component={ManagePosts} />
+                                
                                 <Route path="/" exact component={() => <Redirect to="/iblog" />} />    
                                 <Route path='/iblog' exact component={Home} />
                                 <Route path='/iblog/posts/:id' exact component={PostDetails} />
