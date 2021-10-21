@@ -4,7 +4,6 @@ import Zoom from 'react-reveal/Zoom';
 import Flip from 'react-reveal/Flip';
 import SocialMedia from '../../components/socialmedia/SocialMedia'
 
-import MainPhoto from '../../assets/mainphoto.jpg'
 import WelcomePhoto from '../../assets/welcomephoto.jpg'
 import MessagePhoto from '../../assets/messagephoto.jpg'
 import Why from '../../assets/why.jpg'
@@ -13,6 +12,7 @@ import instagramfeed2 from '../../assets/instagramfeed2.jpg'
 import instagramfeed3 from '../../assets/instagramfeed3.jpg'
 
 import useStyles from './styles'
+
 import Header from './homeheader/Header';
 
 const Home = () => {

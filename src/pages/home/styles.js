@@ -28,7 +28,6 @@ export default makeStyles((theme) => ({
         marginRight: '50px',
         height: '380px',
         boxShadow: '2px 2px 6px grey',
-        backgroundColor: '#353c553f',
     },
     whyphoto: {
         width: '50%',

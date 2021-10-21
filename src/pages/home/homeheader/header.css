@@ -1,12 +1,21 @@
 .header {
   width: 100%;
   height: 550px;
-  background: url("../../../assets//mainphoto.jpg");
+  padding: 50px;
+  background: url("../../../assets//headerpic.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
+  background-position: center;
+  display: grid;
+  align-items: center;
 }
-
+.typography {
+  font-weight: 600;
+  text-shadow: 1px 1px 12px black;
+  margin: auto;
+  width: 400px;
+  padding: 5px;
+}
 .link {
   display: flex;
   align-items: center;
@@ -15,12 +24,19 @@
   border-radius: 5px;
   width: 150px;
   padding: 5px;
-  margin: auto;
+  margin: auto auto 40px auto;
 }
 
 @media (max-width: 768px) {
   .header {
     height: 60vh;
+
+    align-items: stretch;
+  }
+  .typography {
+    font-size: 14px;
+    font-weight: 600;
+    width: 300px;
   }
   .link {
     width: 130px;
