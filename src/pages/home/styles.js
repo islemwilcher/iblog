@@ -4,6 +4,10 @@ export default makeStyles((theme) => ({
     container: {
         margin: '60px auto 0 auto',
     },
+    center: {
+        margin: 'auto',
+        width: '300px',
+    },
     media: {
         height: '550px',
     },

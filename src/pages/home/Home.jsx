@@ -1,4 +1,5 @@
 
+import { useState, useEffect } from 'react'
 import { Container, Grid, Paper, Typography } from '@material-ui/core'
 import Zoom from 'react-reveal/Zoom';
 import Flip from 'react-reveal/Flip';
@@ -14,12 +15,45 @@ import instagramfeed3 from '../../assets/instagramfeed3.jpg'
 import useStyles from './styles'
 
 import Header from './homeheader/Header';
+import Loading from '../../components/Loading';
 
 const Home = () => {
     const classes = useStyles()
+    const [done, setDone] = useState(false)
+    const [completed, setCompleted] = useState(false)
+    const type = 'bubbles'
+    const color = 'black'
+    const color0 = 'rgb(136, 165, 219)'
+
+    
+    useEffect((completed) => {
+        if(!completed){
+        setTimeout(() => {
+            setDone(true)
+
+            setTimeout(() => {
+                setCompleted(true)
+            }, 250)
+        }, 250);
+        }
+
+    }, [completed]);
+
     return (
         <>
-            <Header />
+            {!completed
+            ? (
+                <>
+                {!done
+                ? <Container className={classes.center}><Loading className={classes.center} type={type} color={color} /></Container>
+                : <Container className={classes.center}><Loading type={type} color={color0} /></Container>
+                }  
+                </>
+                )
+
+            : (
+                <>
+                <Header />
             <Container className={classes.container}>
                 <Grid className={classes.freelencegrid}>
                 <Flip left>
@@ -79,6 +113,10 @@ const Home = () => {
                 </Grid>
             </Container>
             <SocialMedia />
+            </>
+            )
+
+            }
         </>
     )
 }
