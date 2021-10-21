@@ -6,6 +6,8 @@ import FileBase from 'react-file-base64';
 import { addPost, updatePost } from '../../../../actions/posts';
 import useStyles from './styles';
 
+import { useHistory } from 'react-router-dom';
+
 const Form = ({ currentId, setCurrentId }) => {
   const [postData, setPostData] = useState({
     creator: '', title: '', message: '', tags: '', selectedFile: '',
@@ -18,6 +20,7 @@ const Form = ({ currentId, setCurrentId }) => {
  const post = useSelector((state) => (currentId ? state.posts.posts.find((message) => message._id === currentId) : null));
   const dispatch = useDispatch();
   const classes = useStyles();
+  const history = useHistory();
 
   useEffect(() => {
     if (post) setPostData(post);
@@ -38,7 +41,7 @@ const Form = ({ currentId, setCurrentId }) => {
     e.preventDefault();
 
     if (currentId === 0) {
-      dispatch(addPost(postData));
+      dispatch(addPost(postData, history));
       clear();
     } else {
       dispatch(updatePost(currentId, postData));
