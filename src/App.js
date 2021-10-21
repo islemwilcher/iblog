@@ -2,10 +2,6 @@ import { useState, useEffect } from 'react'
 
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
-import { Container } from '@material-ui/core';
-
-
-
 //Components
 import Navbar from './components/nav/navbar'
 import Protectedroute from './components/protectedroute/Protectedroute'
@@ -31,9 +27,7 @@ const App = () => {
     const color = 'black'
     const color0 = 'rgb(136, 165, 219)'
 
-    
-    useEffect((completed) => {
-        if(!completed){
+    useEffect(() => {
         setTimeout(() => {
             setDone(true)
 
@@ -41,8 +35,6 @@ const App = () => {
                 setCompleted(true)
             }, 2500)
         }, 2000);
-        }
-
     }, []);
 
     return (
@@ -50,7 +42,6 @@ const App = () => {
             <Router>
                     <Navbar />
                 <Switch>
-                    
                     <>
                     {!completed
                         ? (
@@ -75,9 +66,7 @@ const App = () => {
                         )
                     }
                     </>
-                    
                 </Switch>
-                
             </Router>
         </div>
     )

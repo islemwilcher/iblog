@@ -5,10 +5,8 @@ import SocialMedia from '../../components/socialmedia/SocialMedia'
 import LightSpeed from 'react-reveal/LightSpeed';
 import Zoom from 'react-reveal/Zoom';
 const About = () => {
-
     const classes = useStyles()
-    const type = 'bars'
-    const color = 'red'
+    
     return (
         <Container className={classes.container}>
             <SocialMedia />

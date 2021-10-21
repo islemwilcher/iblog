@@ -14,6 +14,7 @@ import instagramfeed3 from '../../assets/instagramfeed3.jpg'
 import useStyles from './styles'
 
 import Header from './homeheader/Header';
+import Footer from '../../components/footer/Footer';
 
 const Home = () => {
     const classes = useStyles()
@@ -80,6 +81,7 @@ const Home = () => {
                 </Grid>
             </Container>
             <SocialMedia />
+            <Footer />
             </>
     )
 }

@@ -53,9 +53,9 @@ export default makeStyles((theme) => ({
         padding: '20px', 
     },
     title1: {
-        width: '60%',
+        width: '80%',
         fontWeight: '500',
-        margin: '30px auto 0 auto',
+        margin: '30px auto 10px auto',
     },
     paragraph: {
         fontWeight: '400',
@@ -78,7 +78,7 @@ export default makeStyles((theme) => ({
         alignContent: 'center',
     },
     instagramfeedgrid: {
-        marginTop: '30px',
+        marginTop: '40px',
         marginBottom: '30px',
         display: 'flex',
         justifyContent: 'space-evenly',
