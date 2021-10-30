@@ -1,3 +1,6 @@
+
+import ReactGa from 'react-ga'
+
 import { useState, useEffect } from 'react'
 
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
@@ -26,6 +29,13 @@ const App = () => {
     const type = 'bubbles'
     const color = 'black'
     const color0 = 'rgb(136, 165, 219)'
+
+    useEffect(() => {
+        ReactGa.initialize('G-0ZB9PY3REG')
+        //report page view
+        ReactGa.pageview('/')
+
+    },[])
 
     useEffect(() => {
         setTimeout(() => {
