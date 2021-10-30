@@ -33,7 +33,7 @@ const App = () => {
     useEffect(() => {
         ReactGa.initialize('G-0ZB9PY3REG')
         //report page view
-        ReactGa.pageview('/')
+        ReactGa.pageview(window.location.pathname + window.location.search)
 
     },[])
 
